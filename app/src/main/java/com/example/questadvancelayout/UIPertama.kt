@@ -52,7 +52,21 @@ fun ActivityPertama(modifier: Modifier) {
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(all = 10.dp)
             ){
-                
+                val gambar = painterResource(id = R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 10.dp)
+                )
+                Text (
+                    text = stringResource(id = R.string.nama),
+                    fontSize = 20.sp,
+                    fontFamily = FontFamily.Cursive,
+                    color = Color.White,
+                    modifier = Modifier.padding(top = 15.dp)
+                )
             }
         }
     }
