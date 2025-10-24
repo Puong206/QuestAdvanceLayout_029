@@ -13,7 +13,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Text
 
 @Composable
@@ -27,11 +28,18 @@ fun ActivityPraktikum (modifier: Modifier) {
             .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
             Text(
                 text = stringResource(id = R.string.nama),
                 fontSize = 32.sp,
                 color = colorResource(id = R.color.white),
                 fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height(height = 8.dp))
+            Text(
+                text = stringResource(id = R.string.username),
+                fontSize = 20.sp,
+                color = colorResource(id = R.color.white),
             )
         }
     }
