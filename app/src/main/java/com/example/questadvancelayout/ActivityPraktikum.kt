@@ -1,5 +1,7 @@
 package com.example.questadvancelayout
 
+import androidx.compose.material3.Surface
+import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -11,11 +13,12 @@ import androidx.compose.foundation.background
 
 @Composable
 fun ActivityPraktikum (modifier: Modifier) {
-    Column (modifier = Modifier
-                .padding(top = 100.dp)
-                .fillMaxSize()
-                .background(color = colorResource(id = R.color.blue))
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = colorResource(id = R.color.blue)
     ) {
+        Column {
 
+        }
     }
 }
