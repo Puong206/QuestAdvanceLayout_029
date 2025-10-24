@@ -86,7 +86,7 @@ fun ActivityPertama(modifier: Modifier) {
         ){
             Text(
                 text = stringResource(id = R.string.copy),
-                modifier = Modifer
+                modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 10.dp)
             )
