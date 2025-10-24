@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">MyLayout</string>
     <string name="nama">Arya Bagas Saputra</string>
+    <string name="username">arya.bs.206</string>
     <string name="alamat">Kebumen, Jawa Tengah</string>
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>

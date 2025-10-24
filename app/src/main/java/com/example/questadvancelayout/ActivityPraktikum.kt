@@ -29,7 +29,6 @@ fun ActivityPraktikum (modifier: Modifier) {
         ) {
             Text(
                 text = stringResource(id = R.string.nama),
-                //fontFamily = ,
                 fontSize = 32.sp,
                 color = colorResource(id = R.color.white),
                 fontWeight = FontWeight.Bold
