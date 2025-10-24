@@ -1,6 +1,7 @@
 package com.example.questadvancelayout
 import androidx.compose.*
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -80,6 +81,15 @@ fun ActivityPertama(modifier: Modifier) {
                 )
             }
         }
-
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ){
+            Text(
+                text = stringResource(id = R.string.copy),
+                modifier = Modifer
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 10.dp)
+            )
+        }
     }
 }
