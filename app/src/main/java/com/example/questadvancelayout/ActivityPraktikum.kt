@@ -20,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
 import androidx.compose.ui.draw.clip
@@ -56,7 +57,20 @@ fun ActivityPraktikum (modifier: Modifier) {
                 Row(modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceAround)
                 {
-                    
+                    val icon1 = painterResource(id = R.drawable.instagram_icon)
+                    Image(painter = icon1,
+                        contentDescription = null,
+                        contentScale = ContentScale.Fit,
+                        modifier = Modifier
+                            .height(height = 50.dp)
+                            .width(width = 50.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color.White,
+                                shape = CircleShape
+                            )
+                            .clip(CircleShape))
+
                 }
             }
             Text(
