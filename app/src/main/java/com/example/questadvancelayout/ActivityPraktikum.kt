@@ -23,6 +23,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.magnifier
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.draw.clip
@@ -142,6 +143,12 @@ fun ActivityPraktikum (modifier: Modifier) {
                 fontWeight = FontWeight.Medium,
                 color = colorResource(id = R.color.white)
             )
+            Card(modifier = Modifier
+                .height(height = 92.dp)
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp)) {
+
+            }
         }
     }
 }
