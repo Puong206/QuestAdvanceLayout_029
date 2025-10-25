@@ -44,7 +44,7 @@ fun ActivityPraktikum (modifier: Modifier) {
                 contentDescription = null,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
-                    .padding(all = 10.dp)
+                    .padding(top = 10.dp, bottom = 2.dp)
                     .height(height = 160.dp)
                     .border(
                         width = 2.dp,
@@ -52,21 +52,20 @@ fun ActivityPraktikum (modifier: Modifier) {
                         shape = CircleShape
                     )
                     .clip(CircleShape))
-            Spacer(modifier = Modifier.height(height = 8.dp))
             Column() {
                 Row(modifier = modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceAround)
+                    horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally))
                 {
                     val icon1 = painterResource(id = R.drawable.instagram_icon)
                     Image(painter = icon1,
                         contentDescription = null,
                         contentScale = ContentScale.Fit,
                         modifier = Modifier
-                            .height(height = 50.dp)
-                            .width(width = 50.dp)
+                            .height(height = 48.dp)
+                            .width(width = 48.dp)
                             .border(
                                 width = 2.dp,
-                                color = Color.White,
+                                color = colorResource(id = R.color.orange),
                                 shape = CircleShape
                             )
                             .clip(CircleShape))
@@ -75,11 +74,11 @@ fun ActivityPraktikum (modifier: Modifier) {
                         contentDescription = null,
                         contentScale = ContentScale.Fit,
                         modifier = Modifier
-                            .height(50.dp)
-                            .width(50.dp)
+                            .height(height = 48.dp)
+                            .width(width = 48.dp)
                             .border(
                                 width = 2.dp,
-                                color = Color.White,
+                                color = colorResource(id = R.color.orange),
                                 shape = CircleShape
                             )
                             .clip(CircleShape))
@@ -88,11 +87,11 @@ fun ActivityPraktikum (modifier: Modifier) {
                         contentDescription = null,
                         contentScale = ContentScale.Fit,
                         modifier = Modifier
-                            .height(50.dp)
-                            .width(50.dp)
+                            .height(height = 48.dp)
+                            .width(width = 48.dp)
                             .border(
                                 width = 2.dp,
-                                color = Color.White,
+                                color = colorResource(id = R.color.orange),
                                 shape = CircleShape
                             )
                             .clip(CircleShape))
@@ -101,11 +100,11 @@ fun ActivityPraktikum (modifier: Modifier) {
                         contentDescription = null,
                         contentScale = ContentScale.Fit,
                         modifier = Modifier
-                            .height(50.dp)
-                            .width(50.dp)
+                            .height(height = 48.dp)
+                            .width(width = 48.dp)
                             .border(
                                 width = 2.dp,
-                                color = Color.White,
+                                color = colorResource(id = R.color.orange),
                                 shape = CircleShape
                             )
                             .clip(CircleShape))
