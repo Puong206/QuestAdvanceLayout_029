@@ -168,6 +168,14 @@ fun ActivityPraktikum (modifier: Modifier) {
                         fontWeight = FontWeight.Medium,
                         color = colorResource(id = R.color.blue)
                     )
+                    val icon5 = painterResource(id = R.drawable.right_fill)
+                    Image(painter = icon5,
+                        contentDescription = null,
+                        contentScale = ContentScale.Fit,
+                        modifier = Modifier
+                            .height(height = 24.dp)
+                            .width(width = 24.dp)
+                    )
                 }
             }
         }
