@@ -21,12 +21,21 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.magnifier
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
 
+val PlusJakartaSans = FontFamily(
+    Font(R.font.plusjakartasans_light, FontWeight.Light),
+    Font(R.font.plusjakartasans_regular, FontWeight.Normal),
+    Font(R.font.plusjakartasans_medium, FontWeight.Medium),
+    Font(R.font.plusjakartasans_bold, FontWeight.Bold)
+)
 
 @Composable
 fun ActivityPraktikum (modifier: Modifier) {
@@ -113,14 +122,25 @@ fun ActivityPraktikum (modifier: Modifier) {
             Text(
                 text = stringResource(id = R.string.nama),
                 fontSize = 32.sp,
-                color = colorResource(id = R.color.white),
-                fontWeight = FontWeight.Bold
+                fontFamily = PlusJakartaSans,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.white)
             )
             Spacer(modifier = Modifier.height(height = 4.dp))
             Text(
                 text = stringResource(id = R.string.username),
                 fontSize = 20.sp,
+                fontFamily = PlusJakartaSans,
+                fontWeight = FontWeight.Light,
                 color = colorResource(id = R.color.white),
+            )
+            Spacer(modifier = Modifier.height(height = 12.dp))
+            Text(
+                text = stringResource(id = R.string.jobs),
+                fontSize = 20.sp,
+                fontFamily = PlusJakartaSans,
+                fontWeight = FontWeight.Medium,
+                color = colorResource(id = R.color.white)
             )
         }
     }
