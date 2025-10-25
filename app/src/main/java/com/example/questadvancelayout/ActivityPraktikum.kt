@@ -28,6 +28,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 
@@ -147,7 +148,27 @@ fun ActivityPraktikum (modifier: Modifier) {
                 .height(height = 92.dp)
                 .fillMaxWidth(fraction = 1f)
                 .padding(all = 12.dp)) {
-
+                Row (modifier = modifier.fillMaxWidth()
+                    .padding(all = 10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp,
+                        Alignment.CenterHorizontally))
+                {
+                    val cardIcon1 = painterResource(id = R.drawable.figma_icon)
+                    Image(painter = cardIcon1,
+                        contentDescription = null,
+                        contentScale = ContentScale.Fit,
+                        modifier = Modifier
+                            .height(height = 32.dp)
+                            .width(width = 32.dp)
+                    )
+                    Text(
+                        text = "Portofolio",
+                        fontSize = 16.sp,
+                        fontFamily = PlusJakartaSans,
+                        fontWeight = FontWeight.Medium,
+                        color = colorResource(id = R.color.blue)
+                    )
+                }
             }
         }
     }
