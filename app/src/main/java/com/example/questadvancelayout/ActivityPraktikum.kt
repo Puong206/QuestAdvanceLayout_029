@@ -70,6 +70,19 @@ fun ActivityPraktikum (modifier: Modifier) {
                                 shape = CircleShape
                             )
                             .clip(CircleShape))
+                    val icon2 = painterResource(id = R.drawable.tiktok_icon)
+                    Image(painter = icon2,
+                        contentDescription = null,
+                        contentScale = ContentScale.Fit,
+                        modifier = Modifier
+                            .height(50.dp)
+                            .width(50.dp)
+                            .border(
+                                width = 2.dp,
+                                color = Color.White,
+                                shape = CircleShape
+                            )
+                            .clip(CircleShape))
 
                 }
             }
