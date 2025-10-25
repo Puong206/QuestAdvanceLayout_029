@@ -2,9 +2,11 @@ package com.example.questadvancelayout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.Surface
 import androidx.compose.ui.graphics.Color
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -16,6 +18,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
@@ -49,6 +52,13 @@ fun ActivityPraktikum (modifier: Modifier) {
                     )
                     .clip(CircleShape))
             Spacer(modifier = Modifier.height(height = 8.dp))
+            Column() {
+                Row(modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceAround)
+                {
+                    
+                }
+            }
             Text(
                 text = stringResource(id = R.string.nama),
                 fontSize = 32.sp,
